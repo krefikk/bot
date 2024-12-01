@@ -16,6 +16,10 @@ async def hello(ctx):
     await ctx.send(f'Merhaba! Ben {bot.user}, bir Discord sohbet botuyum!')
 
 @bot.command()
+async def heh(ctx, count_heh = 5):
+    await ctx.send("he" * count_heh)
+
+@bot.command()
 async def coin(ctx):
     yazi_tura_liste = ["yazı", "tura"]
     sonuc = random.choice(yazi_tura_liste)
